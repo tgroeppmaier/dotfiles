@@ -1,0 +1,5 @@
+theme = "ayu-mirage"
+
+[lsp]
+timeout = 10
+

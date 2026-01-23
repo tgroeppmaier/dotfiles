@@ -1,0 +1,5 @@
+font-family = "JetBrains Mono"
+font-size = 13
+
+keybind = ctrl+tab=next_tab
+# Note: Ghostty's MRU logic is often built into its internal tab navigation

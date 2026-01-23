@@ -1,0 +1,66 @@
+theme = "kanagawa"
+
+[editor]
+line-number = "relative"
+auto-pairs = true
+color-modes = true
+bufferline = "always"  # or "multiple" to show only when >1 buffer
+
+auto-format = true
+trim-trailing-whitespace = true
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.auto-save.after-delay]
+enable = true
+timeout = 120000  # 2 minutes
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-progress-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[keys.normal]
+# Cycle next/previous with Alt-. and Alt-,
+"A-." = ":buffer-next"
+"A-," = ":buffer-previous"
+
+# Or use H/L (capital, since lowercase are movement)
+"H" = ":buffer-previous"
+"L" = ":buffer-next"
+
+# Close current buffer
+"A-w" = ":buffer-close"
+
+# LazyGit
+"C-g" = [
+  ":write-all",               # save everything first
+  ":new",                     # open new buffer
+  ":insert-output lazygit",   # run lazygit in it
+  ":buffer-close!",           # close the buffer when done
+  ":redraw",
+  ":reload-all"               # reload files if you staged/committed
+]
+
+"C-k" = [
+  "extend_to_line_bounds",
+  "delete_selection"
+]
+
+[keys.insert]
+# Basic readline/Emacs style navigation
+"C-a" = "goto_line_start"
+"C-e" = "goto_line_end_newline"
+"C-b" = "move_char_left"
+"C-f" = "move_char_right"
+"C-p" = "move_line_up"
+"C-n" = "move_line_down"
+
+# Optional macOS Cmd style
+"Cmd-;"     = "goto_line_end_newline"    # ← your requested binding
+"Cmd-left"  = "goto_line_start"
+"Cmd-right" = "goto_line_end_newline"

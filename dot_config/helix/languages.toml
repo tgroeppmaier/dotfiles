@@ -1,0 +1,9 @@
+[[language]]
+name = "typescript"
+file-types = ["ts", "tsx"]
+language-servers = ["typescript-language-server"]
+
+[language-server.typescript-language-server]
+command = "/opt/homebrew/bin/typescript-language-server"
+args = ["--stdio"]
+

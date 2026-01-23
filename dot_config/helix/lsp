@@ -1,0 +1,10 @@
+[editor.lsp]
+timeout = 10
+
+[editor]
+line-number = "relative"
+auto-pairs = true
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
