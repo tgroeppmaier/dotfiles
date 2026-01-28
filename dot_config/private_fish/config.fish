@@ -36,4 +36,17 @@ function y
     rm -f -- "$tmp"
 end
 
-# 4. Environment Variables
+# refresh git status every 60s in the background
+function __git_autofetch --on-event fish_prompt
+    if test -d .git
+        # throttle
+        if not set -q __git_last_fetch; or test (math (date +%s) - $__git_last_fetch) -ge 60
+            set -g __git_last_fetch (date +%s)
+            command git fetch --quiet --all --prune &
+        end
+    end
+end
+
+# show ahead/behind in prompt
+set -g __fish_git_prompt_showupstream informative
+set -g __fish_git_prompt_showdirtystate 1
