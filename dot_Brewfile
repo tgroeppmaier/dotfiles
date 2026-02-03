@@ -1,3 +1,4 @@
+tap "ck3mp3r/nu-mcp", "https://github.com/ck3mp3r/nu-mcp"
 # All-in-one AI-Powered CLI Chat & Copilot
 brew "aichat"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -8,6 +9,8 @@ brew "bear"
 brew "btop"
 # Powerful, enterprise-ready, open source web server with automatic HTTPS
 brew "caddy"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 # Cross-platform make
 brew "cmake"
 # Container runtimes on MacOS (and Linux) with minimal setup
@@ -58,6 +61,8 @@ brew "intelli-shell"
 brew "jj"
 # Environment diagnostics for Kotlin Multiplatform Mobile app development
 brew "kdoctor"
+# CLI agent for MoonshotAI Kimi platform
+brew "kimi-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Library for reading RAW files from digital photo cameras
@@ -66,6 +71,8 @@ brew "libraw"
 brew "llvm"
 # Show markdown documents on text terminals
 brew "mdcat"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Array framework for Apple silicon
 brew "mlx"
 # Run LLMs with MLX
@@ -74,14 +81,26 @@ brew "mlx-lm"
 brew "ncdu"
 # Utility for managing network connections
 brew "netcat"
+# Modern shell for the GitHub era
+brew "nushell"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Ruby version manager
 brew "rbenv"
+# Safe, concurrent, practical language
+brew "rust"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # Formatting technology for Swift source code
 brew "swift-format"
 # User interface to the TELNET protocol
@@ -104,6 +123,8 @@ brew "yazi"
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# nu-mcp - Model Context Protocol (MCP) Server for Nushell
+brew "ck3mp3r/nu-mcp/nu-mcp"
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
 # AI Coding Agent IDE
@@ -120,6 +141,10 @@ cask "bbedit"
 cask "brave-browser"
 # E-books management software
 cask "calibre"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Brings the power of Copilot coding agent directly to your terminal
 cask "copilot-cli"
 # Multi-platform client-side cloud file encryption tool
@@ -130,6 +155,8 @@ cask "cursor"
 cask "cyberghost-vpn"
 # Photography workflow application and raw developer
 cask "darktable"
+# Web browser
+cask "firefox"
 cask "font-jetbrains-mono-nerd-font"
 # GIT client
 cask "fork"
@@ -137,6 +164,10 @@ cask "fork"
 cask "forklift"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Game development engine
+cask "godot"
+# Desktop GUI for Aider AI pair programming
+cask "hotovo-aider-desk"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Password manager app
@@ -157,6 +188,8 @@ cask "notesnook"
 cask "obsidian"
 # WebKit based web browser
 cask "orion"
+# Command-line shell and scripting language
+cask "powershell"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Image viewer
@@ -243,3 +276,4 @@ vscode "vscodevim.vim"
 vscode "will-stone.plastic"
 vscode "xaver.clang-format"
 vscode "yzhang.markdown-all-in-one"
+cargo "mcp-server-nu"
