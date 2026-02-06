@@ -89,6 +89,8 @@ brew "ollama"
 brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -107,18 +109,26 @@ brew "swift-format"
 brew "telnet"
 # Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
+brew "tmux"
+# AI-powered, non-intrusive terminal assistant
+brew "tmuxai"
 # CLI tool that moves files or folder to the trash
 brew "trash"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Language Server Protocol implementation for TypeScript wrapping tsserver
 brew "typescript-language-server"
+# Markup-based typesetting system
+brew "typst"
 # Extensible IRC client
 brew "weechat"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -145,6 +155,8 @@ cask "calibre"
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# OpenAI's Codex desktop app for managing coding agents
+cask "codex-app"
 # Brings the power of Copilot coding agent directly to your terminal
 cask "copilot-cli"
 # Multi-platform client-side cloud file encryption tool
@@ -210,6 +222,8 @@ cask "visual-studio-code"
 cask "vlc"
 # Rust-based terminal
 cask "warp"
+# Terminal emulator
+cask "wave"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Image viewer and file browser
@@ -231,7 +245,6 @@ vscode "enkia.tokyo-night"
 vscode "esbenp.prettier-vscode"
 vscode "firefox-devtools.vscode-firefox-debug"
 vscode "formulahendry.code-runner"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.github-vscode-theme"
 vscode "google.gemini-cli-vscode-ide-companion"
