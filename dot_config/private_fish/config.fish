@@ -50,3 +50,6 @@ end
 # show ahead/behind in prompt
 set -g __fish_git_prompt_showupstream informative
 set -g __fish_git_prompt_showdirtystate 1
+
+# XcodeBuildMCP
+set -gx XCODEBUILDMCP_ENABLED_WORKFLOWS "simulator,macos,build_macos,testing,discovery,session,device,debug,ui_automation,swiftpm,scaffold"
